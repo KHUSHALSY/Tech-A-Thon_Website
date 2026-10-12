@@ -3,6 +3,8 @@
 ---
 ## 🚀 Overview
 Tech-A-Thon v2.0 is a complete overhaul of the society's web presence, blending high-energy cybernetic cyberpunk aesthetics with modern frontend performance. It preserves all authentic society archives, past events, team dossiers, and media galleries while introducing an immersive, retro-futuristic digital interface.
+                                                                CHECK IT OUT HERE :-
+                                                          https://techathonwebsite.vercel.app/
 ---
 ## ✨ Features & Highlights
 - 💻 **Interactive CLI Command Prompt:** Functional embedded terminal on the hero section supporting commands (`help`, `about`, `events`, `team`, `clear`, etc.).
