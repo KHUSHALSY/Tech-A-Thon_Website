@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery - Tech-A-Thon - Computer Science Department Society</title>
+  <meta name="description" content="A visual journey through our events, workshops, and memorable moments. This is the life of TechAthon in pictures.">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="cyber.css">
+</head>
+<body class="min-h-screen bg-background font-body antialiased">
+
+  <!-- Interactive Cursor Glow & Matrix Rain Canvas -->
+  <div id="cursor-glow"></div>
+  <canvas id="matrix-canvas"></canvas>
+  <div class="scanlines"></div>
+  <div class="vignette"></div>
+  <div class="cyber-grid-floor"></div>
+
+  <!-- Crazy Infinite Moving Text Stream Top -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span class="marquee-item"><span class="marquee-badge">PHOTO VAULT</span> A VISUAL JOURNEY THROUGH OUR EVENTS &amp; WORKSHOPS</span>
+      <span class="marquee-item"><span class="marquee-badge">ARCHIVE</span> THIS IS THE LIFE OF TECHATHON IN PICTURES</span>
+      <span class="marquee-item"><span class="marquee-badge">ARSD COLLEGE</span> DEPARTMENT OF COMPUTER SCIENCE</span>
+      <span class="marquee-item"><span class="marquee-badge">COMMUNITY</span> CODE &bull; INNOVATE &bull; COLLABORATE</span>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- Header Navigation -->
+    <header class="cyber-nav">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-link">
+          <div class="brand-logo-hex">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div>
+            <span class="brand-title">Tech-A-Thon</span>
+            <span class="brand-subtitle">Computer Science Society</span>
+          </div>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle Navigation">&#9776;</button>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="events.html" class="nav-link">Events</a></li>
+            <li><a href="team.html" class="nav-link">Team</a></li>
+            <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="join-us.html" class="nav-cta">Join Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main style="flex: 1;">
+      <!-- Hero Header with Exact V1 Copy -->
+      <section style="padding: 5rem 0 3rem; text-align: center;">
+        <div class="container">
+          <div style="margin-bottom: 1.75rem;">
+            <div class="section-tag scroll-reveal">MEDIA ARCHIVES</div>
+          </div>
+          <h1 class="glitch-text scroll-reveal" data-text="Gallery" style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 1.75rem;">
+            Gallery
+          </h1>
+          <p class="scroll-reveal delay-1" style="font-family: var(--font-mono); color: var(--muted-foreground); max-width: 750px; margin: 0 auto; font-size: 1.125rem; line-height: 1.8;">
+            A visual journey through our events, workshops, and memorable moments. This is the life of TechAthon in pictures.
+          </p>
+        </div>
+      </section>
+
+      <!-- Masonry Photo Vault Grid with All Original Images -->
+      <section style="padding: 1.5rem 0 6rem;">
+        <div class="container">
+          <div class="gallery-grid">
+            
+            <!-- Photo 1 -->
+            <div class="gallery-item scroll-reveal">
+              <img src="images/gallery_ml_d1.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Events/ml%20workshop/ml%20d1.jpg'" alt="ML Workshop Day 1" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">WORKSHOP</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">ML Workshop Day 1</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald);">Interactive machine learning laboratory session</p>
+              </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="gallery-item scroll-reveal delay-1">
+              <img src="images/gallery_random3.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/random3.JPG'" alt="Coding Collaboration" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">COLLABORATION</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Coding Collaboration</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">Students developing open-source solutions</p>
+              </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="gallery-item scroll-reveal delay-2">
+              <img src="images/gallery_tenure_happy.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/last%20tenure%20happy%20face.JPG'" alt="Tenure Celebration" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">MEMBERS</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Executive Council</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald);">Memorable moments of leadership tenure</p>
+              </div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="gallery-item scroll-reveal delay-3">
+              <img src="images/gallery_tenure.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/last%20tenure.JPG'" alt="Last Tenure Team" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">COUNCIL</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Last Tenure Team</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">Annual society team convention</p>
+              </div>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="gallery-item scroll-reveal">
+              <img src="images/gallery_random1.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/random1.JPG'" alt="TechAthon Discussion" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">COMMUNITY</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">TechAthon Discussion</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald);">Peer-to-peer technical exchanges</p>
+              </div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="gallery-item scroll-reveal delay-1">
+              <img src="images/gallery_random2.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/random2.JPG'" alt="Award Ceremony" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">AWARDS</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Award Ceremony</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">Recognizing student excellence</p>
+              </div>
+            </div>
+
+            <!-- Photo 7 -->
+            <div class="gallery-item scroll-reveal delay-2">
+              <img src="images/gallery_cdac.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Events/CDAC%20visit\'25/IMG-20251113-WA0008.jpg'" alt="C-DAC Visit'25" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px; color: #ff007f; border-color: #ff007f;">VISIT</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">C-DAC Visit'25</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald);">Industrial research visit to C-DAC Noida</p>
+              </div>
+            </div>
+
+            <!-- Photo 8 -->
+            <div class="gallery-item scroll-reveal delay-3">
+              <img src="images/gallery_ml_d2.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Events/ml%20workshop/ml%20d2.jpg'" alt="ML Workshop Day 2" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">WORKSHOP</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">ML Workshop Day 2</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">Deep neural network hands-on session</p>
+              </div>
+            </div>
+
+            <!-- Photo 9 -->
+            <div class="gallery-item scroll-reveal">
+              <img src="images/gallery_poster_happy.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Events/Poster%20MAking%20Competition/happy%20face.jpg'" alt="Poster Competition Smiles" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px; color: #ffbd2e; border-color: #ffbd2e;">COMPETITION</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Painting for Future</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald);">Creative sustainability competition participants</p>
+              </div>
+            </div>
+
+            <!-- Photo 10 -->
+            <div class="gallery-item scroll-reveal delay-1">
+              <img src="images/gallery_poster_47.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Events/Poster%20MAking%20Competition/IMG-20241022-WA0047.jpg'" alt="Poster Making Competition" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px; color: #ffbd2e; border-color: #ffbd2e;">COMPETITION</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Poster Showcase</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">Displaying imaginative AI &amp; sustainability art</p>
+              </div>
+            </div>
+
+            <!-- Photo 11 -->
+            <div class="gallery-item scroll-reveal delay-2">
+              <img src="images/gallery_ar_0651.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Events/AI%20x%20AR%20workshop/IMG_0651.jpg'" alt="AI x AR Workshop" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">WORKSHOP</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">AI x AR Workshop</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald);">Augmented reality filters with SnapAR</p>
+              </div>
+            </div>
+
+            <!-- Photo 12 -->
+            <div class="gallery-item scroll-reveal delay-3">
+              <img src="images/gallery_drone.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/drone.jpg'" alt="AI Driven Drone Technology" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">SEMINAR</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Drone Technology</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">Aero-robotics with Flybots</p>
+              </div>
+            </div>
+
+            <!-- Photo 13 -->
+            <div class="gallery-item scroll-reveal">
+              <img src="images/gallery_random4.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/random4.jpg'" alt="Workshop Engagement" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">SESSIONS</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Workshop Engagement</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald);">Hands-on coding atmosphere</p>
+              </div>
+            </div>
+
+            <!-- Photo 14 -->
+            <div class="gallery-item scroll-reveal delay-1">
+              <img src="images/gallery_random5.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/random5.jpg'" alt="Department Seminar" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">SEMINAR</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Department Seminar</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">Interactive speaker sessions</p>
+              </div>
+            </div>
+
+            <!-- Photo 15 -->
+            <div class="gallery-item scroll-reveal delay-2">
+              <img src="images/gallery_random6.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/random6.jpg'" alt="Team Ideation" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">HACKATHON</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Team Ideation</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald);">Designing technical architectures</p>
+              </div>
+            </div>
+
+            <!-- Photo 16 -->
+            <div class="gallery-item scroll-reveal delay-3">
+              <img src="images/gallery_random7.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/random7.jpg'" alt="Interactive Tech Demo" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">DEMO</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Interactive Tech Demo</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">Real-time software deployment</p>
+              </div>
+            </div>
+
+            <!-- Photo 17 -->
+            <div class="gallery-item scroll-reveal">
+              <img src="images/gallery_random8.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/random8.jpg'" alt="Guest Lecture" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">LECTURE</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Guest Lecture</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald);">Insights from domain pioneers</p>
+              </div>
+            </div>
+
+            <!-- Photo 18 -->
+            <div class="gallery-item scroll-reveal delay-1">
+              <img src="images/gallery_random9.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Gallery/random9.jpg'" alt="Society Milestone" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="marquee-badge" style="width: fit-content; margin-bottom: 6px;">MILESTONE</span>
+                <h3 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff;">Society Milestone</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">Celebrating tech excellence at ARSD</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+      <div class="container">
+        <div class="footer-grid">
+          
+          <div class="space-y-4">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+              <div class="brand-logo-hex" style="width: 36px; height: 36px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span style="font-family: var(--font-headline); font-size: 1.15rem; font-weight: 700; color: #fff;">Tech-A-Thon</span>
+            </div>
+            <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted-foreground); line-height: 1.7;">
+              Empowering students through technology, innovation, and community.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading" style="margin-bottom: 1rem;">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading" style="margin-bottom: 1rem;">Events</h4>
+            <ul class="footer-links">
+              <li><a href="events.html?type=Competition">Competitions</a></li>
+              <li><a href="events.html?type=Workshop">Workshops</a></li>
+              <li><a href="events.html?type=Seminar">Seminars</a></li>
+              <li><a href="events.html?type=Visit">Industrial Visits</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading" style="margin-bottom: 1rem;">Connect</h4>
+            <ul class="footer-links">
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="join-us.html">Join Tech-A-Thon</a></li>
+            </ul>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <a href="https://github.com/techathon-arsd" target="_blank" rel="noreferrer" class="social-btn" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/techathon-arsd-62995b268/" target="_blank" rel="noreferrer" class="social-btn" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="https://www.instagram.com/techathonarsd/" target="_blank" rel="noreferrer" class="social-btn" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted-foreground);">
+            &copy; <span id="year">2026</span> Tech-A-Thon. All rights reserved.
+          </p>
+          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted-foreground);">
+            Department of Computer Science, ARSD College
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="cyber.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

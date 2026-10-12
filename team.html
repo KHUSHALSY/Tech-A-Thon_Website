@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Team - Tech-A-Thon - Computer Science Department Society</title>
+  <meta name="description" content="Meet the brilliant minds behind Tech-A-Thon - the students, mentors, and faculty who drive our community forward at ARSD College.">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="cyber.css">
+</head>
+<body class="min-h-screen bg-background font-body antialiased">
+
+  <!-- Interactive Cursor Glow & Matrix Rain Canvas -->
+  <div id="cursor-glow"></div>
+  <canvas id="matrix-canvas"></canvas>
+  <div class="scanlines"></div>
+  <div class="vignette"></div>
+  <div class="cyber-grid-floor"></div>
+
+  <!-- Crazy Infinite Moving Text Stream Top -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span class="marquee-item"><span class="marquee-badge">LEADERSHIP</span> MEET THE BRILLIANT MINDS BEHIND TECH-A-THON</span>
+      <span class="marquee-item"><span class="marquee-badge">FACULTY</span> DEDICATED ACADEMIC MENTORS &amp; ADVISORS</span>
+      <span class="marquee-item"><span class="marquee-badge">CORE TEAM</span> STUDENT COUNCIL &amp; TECHNICAL ARCHITECTS</span>
+      <span class="marquee-item"><span class="marquee-badge">INSTITUTION</span> ATMA RAM SANATAN DHARMA COLLEGE // DU</span>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- Header Navigation -->
+    <header class="cyber-nav">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-link">
+          <div class="brand-logo-hex">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div>
+            <span class="brand-title">Tech-A-Thon</span>
+            <span class="brand-subtitle">Computer Science Society</span>
+          </div>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle Navigation">&#9776;</button>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="events.html" class="nav-link">Events</a></li>
+            <li><a href="team.html" class="nav-link active">Team</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="join-us.html" class="nav-cta">Join Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main style="flex: 1;">
+      <!-- Hero Header -->
+      <section style="padding: 5rem 0 3rem; text-align: center;">
+        <div class="container">
+          <div style="margin-bottom: 1.75rem;">
+            <div class="section-tag scroll-reveal">COUNCIL &amp; ADVISORS</div>
+          </div>
+          <h1 class="glitch-text scroll-reveal" data-text="Our Team" style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 1.75rem;">
+            Our Team
+          </h1>
+          <p class="scroll-reveal delay-1" style="font-family: var(--font-mono); color: var(--muted-foreground); max-width: 750px; margin: 0 auto; font-size: 1.125rem; line-height: 1.8;">
+            Meet the brilliant minds behind Tech-A-Thon - the students, mentors, and faculty who drive our community forward.
+          </p>
+        </div>
+      </section>
+
+      <!-- 1. Faculty Coordinators Section -->
+      <section style="padding: 1.5rem 0 4rem;">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 3rem;" class="scroll-reveal">
+            <h2 class="glitch-text" data-text="Faculty Coordinators" style="font-size: 2rem; color: #fff; margin-bottom: 0.5rem;">
+              Faculty Coordinators
+            </h2>
+            <p style="font-family: var(--font-mono); color: var(--primary); font-size: 0.9rem;">
+              [ Department of Computer Science &bull; ARSD College ]
+            </p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+            
+            <!-- Faculty 1: Mr. Dharmendra Singh -->
+            <div class="team-card scroll-reveal delay-1">
+              <div class="team-image-box">
+                <img src="images/dharmendra_sir.jpeg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/faculty/dharmendra%20sir.jpeg'" alt="Mr. Dharmendra Singh" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.35rem; color: #fff; margin-bottom: 0.2rem;">Mr. Dharmendra Singh</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Association In-charge</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  A dedicated academic leader providing strategic guidance and fostering a strong culture of learning within the society. His extensive experience ensures smooth coordination and meaningful growth.
+                </p>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dharmendra@arsd.du.ac.in" target="_blank" rel="noopener noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    Email
+                  </a>
+                  <a href="https://linkedin.com/in/username" target="_blank" rel="noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty 2: Mr. Mahesh Kumar -->
+            <div class="team-card scroll-reveal delay-2">
+              <div class="team-image-box">
+                <img src="images/mahesh_sir.jpeg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/faculty/mahesh%20sir.jpeg'" alt="Mr. Mahesh Kumar" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.35rem; color: #fff; margin-bottom: 0.2rem;">Mr. Mahesh Kumar</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Teacher In-charge</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  A supportive mentor who oversees academic and technical initiatives with clarity and commitment. His leadership strengthens the society’s direction and execution of key activities.
+                </p>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maheshkumar@arsd.du.ac.in" target="_blank" rel="noopener noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    Email
+                  </a>
+                  <a href="https://www.linkedin.com/in/mahesh-kumar-bhandari-0a9a08197/" target="_blank" rel="noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty 3: Mr. Jag Mohan -->
+            <div class="team-card scroll-reveal delay-3">
+              <div class="team-image-box">
+                <img src="images/jag_mohan_sir.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/faculty/jag%20mohan%20sir.jpg'" alt="Mr. Jag Mohan" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.35rem; color: #fff; margin-bottom: 0.2rem;">Mr. Jag Mohan</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Seminar In-charge</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  An experienced faculty member who leads seminar initiatives with precision and thoughtful mentorship. His involvement enhances the society’s academic engagement and event quality.
+                </p>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jagmohan@arsd.du.ac.in" target="_blank" rel="noopener noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    Email
+                  </a>
+                  <a href="https://www.linkedin.com/in/jag-mohan-1337b412/" target="_blank" rel="noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Core Team Section -->
+      <section style="padding: 3rem 0 6rem; background: rgba(13, 22, 42, 0.4); border-top: 1px solid var(--border);">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 3.5rem;" class="scroll-reveal">
+            <h2 class="glitch-text" data-text="Core Team" style="font-size: 2rem; color: #fff; margin-bottom: 0.5rem;">
+              Core Team
+            </h2>
+            <p style="font-family: var(--font-mono); color: var(--emerald); font-size: 0.9rem;">
+              [ Student Executive Council 2024–2025 ]
+            </p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
+            
+            <!-- 1. Hiten Gupta -->
+            <div class="team-card scroll-reveal delay-1">
+              <div class="team-image-box">
+                <img src="images/hiten.jpg" onerror="this.src='https://tech-a-thon-updated.vercel.app/images/hiten.jpg'" alt="Hiten Gupta" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem;">Hiten Gupta</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">President</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  He’s a pioneering President and all-rounder whose creativity and problem-solving don’t stop where others run out of ideas.
+                </p>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hitengupta44@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    Email
+                  </a>
+                  <a href="https://www.linkedin.com/in/hiten-gupta-260624384" target="_blank" rel="noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Harsh -->
+            <div class="team-card scroll-reveal delay-2">
+              <div class="team-image-box">
+                <img src="images/harsh.jpg" onerror="this.src='https://tech-a-thon-updated.vercel.app/images/harsh.jpg'" alt="Harsh" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem;">Harsh</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Vice President</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  He’s disciplined, analytical, and results-driven, with decisive leadership and a proactive style that inspires others.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3. Anushka Poswal -->
+            <div class="team-card scroll-reveal delay-3">
+              <div class="team-image-box">
+                <img src="images/anushka.jpg" onerror="this.src='https://raw.githubusercontent.com/AI-ash/Tech-A-Thon-Photos/main/Teams/anushka.jpg'" alt="Anushka Poswal" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem;">Anushka Poswal</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Secretary</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  As Secretary, she ensures smooth events and consistently supports Tech-A-Thon with her dedication and energy.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4. Kushi -->
+            <div class="team-card scroll-reveal delay-1">
+              <div class="team-image-box">
+                <img src="images/kushi.jpg" onerror="this.src='https://tech-a-thon-updated.vercel.app/images/kushi.jpg'" alt="Kushi" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem;">Kushi</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Joint Secretary</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  She’s passionately focused, ensuring our academic journey goes beyond theory and into real, practical tech.
+                </p>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khushichauhan8016@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    Email
+                  </a>
+                  <a href="https://www.linkedin.com/in/khushi-chauhan-4a465041a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Chirag -->
+            <div class="team-card scroll-reveal delay-2">
+              <div class="team-image-box">
+                <img src="images/chirag.jpg" onerror="this.src='https://tech-a-thon-updated.vercel.app/images/chirag.jpg'" alt="Chirag" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem;">Chirag</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Treasurer</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  He oversees finances with smart allocation and clear budgeting, keeping all tech events running strong.
+                </p>
+              </div>
+            </div>
+
+            <!-- 6. Suyash Gupta -->
+            <div class="team-card scroll-reveal delay-3">
+              <div class="team-image-box">
+                <img src="images/suyash.jpg" onerror="this.src='https://tech-a-thon-updated.vercel.app/images/suyash.jpg'" alt="Suyash Gupta" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem;">Suyash Gupta</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Non-Technical Head</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  As Non-Technical Head, he oversees operations, coordinates teams, and ensures smooth execution of events through strong organizational and leadership skills.
+                </p>
+              </div>
+            </div>
+
+            <!-- 7. Nitish kumar -->
+            <div class="team-card scroll-reveal delay-1">
+              <div class="team-image-box">
+                <img src="images/nitish.jpg" onerror="this.src='https://tech-a-thon-updated.vercel.app/images/nitish.jpg'" alt="Nitish kumar" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem;">Nitish kumar</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Sponsorship Head</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  Introducing Nitish, our Sponsorship Head — confident, responsible, and focused on building strong partnerships and securing valuable opportunities for the society.
+                </p>
+              </div>
+            </div>
+
+            <!-- 8. Ayush Azad -->
+            <div class="team-card scroll-reveal delay-2">
+              <div class="team-image-box">
+                <img src="images/ayush.jpg" onerror="this.src='https://tech-a-thon-updated.vercel.app/images/ayush.jpg'" alt="Ayush Azad" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem;">Ayush Azad</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Technical Head</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  He leads the society’s tech operations, ensures smooth events, and builds practical projects that strengthen Tech-A-Thon’s workflow.
+                </p>
+              </div>
+            </div>
+
+            <!-- 9. Jay -->
+            <div class="team-card scroll-reveal delay-3">
+              <div class="team-image-box">
+                <img src="images/jay.png" onerror="this.src='https://tech-a-thon-updated.vercel.app/images/jay.png'" alt="Jay" class="team-image">
+                <div class="team-image-gradient"></div>
+                <div class="team-name-tag">
+                  <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem;">Jay</h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">Coordinator Head</p>
+                </div>
+              </div>
+              <div class="team-body">
+                <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                  As Coordinator Head of Tech-A-Thon, he oversees team coordination, manages technical initiatives, and ensures the smooth execution of innovative projects through effective collaboration and leadership.
+                </p>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mr.dabasjay@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    Email
+                  </a>
+                  <a href="https://www.linkedin.com/in/jay-dabas-84860340b/" target="_blank" rel="noreferrer" class="btn-cyber-outline" style="padding: 6px 14px; font-size: 0.8rem; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+      <div class="container">
+        <div class="footer-grid">
+          
+          <div class="space-y-4">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+              <div class="brand-logo-hex" style="width: 36px; height: 36px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span style="font-family: var(--font-headline); font-size: 1.15rem; font-weight: 700; color: #fff;">Tech-A-Thon</span>
+            </div>
+            <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted-foreground); line-height: 1.7;">
+              Empowering students through technology, innovation, and community.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading" style="margin-bottom: 1rem;">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading" style="margin-bottom: 1rem;">Events</h4>
+            <ul class="footer-links">
+              <li><a href="events.html?type=Competition">Competitions</a></li>
+              <li><a href="events.html?type=Workshop">Workshops</a></li>
+              <li><a href="events.html?type=Seminar">Seminars</a></li>
+              <li><a href="events.html?type=Visit">Industrial Visits</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading" style="margin-bottom: 1rem;">Connect</h4>
+            <ul class="footer-links">
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="join-us.html">Join Tech-A-Thon</a></li>
+            </ul>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <a href="https://github.com/techathon-arsd" target="_blank" rel="noreferrer" class="social-btn" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/techathon-arsd-62995b268/" target="_blank" rel="noreferrer" class="social-btn" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="https://www.instagram.com/techathonarsd/" target="_blank" rel="noreferrer" class="social-btn" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted-foreground);">
+            &copy; <span id="year">2026</span> Tech-A-Thon. All rights reserved.
+          </p>
+          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted-foreground);">
+            Department of Computer Science, ARSD College
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="cyber.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
