@@ -64,25 +64,25 @@
 
     <main style="flex: 1;">
       <!-- Hero Section with Command Prompt Terminal & Glitch Headings -->
-      <section style="padding: 5rem 0 3.5rem; position: relative;">
+      <section class="hero-section">
         <div class="container">
-          <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center;" class="hero-split">
+          <div class="hero-split">
             
-            <div class="scroll-reveal-left">
+            <div class="hero-content scroll-reveal-left">
               <div style="margin-bottom: 1.75rem;">
                 <div class="section-tag">&lt;/&gt; ATMA RAM SANATAN DHARMA COLLEGE</div>
               </div>
-              <h1 class="glitch-title" data-text="Tech-A-Thon" style="font-size: clamp(2.5rem, 5.5vw, 4.5rem); margin-bottom: 1.5rem; line-height: 1.1;">
+              <h1 class="glitch-title hero-title" data-text="Tech-A-Thon">
                 Tech-A-Thon
               </h1>
-              <p style="font-family: var(--font-headline); color: var(--emerald); font-size: 1.25rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 1.25rem;">
+              <p class="hero-motto">
                 Think. Build. Evolve.
               </p>
-              <p style="font-family: var(--font-mono); color: var(--muted-foreground); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem; max-width: 600px;">
+              <p class="hero-desc">
                 We are Tech-A-Thon, the official Computer Science Department Society of Atma Ram Sanatan Dharma College. Our purpose is to inspire, innovate, and build the future of technology, one project at a time.
               </p>
 
-              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <div class="hero-buttons">
                 <a href="join-us.html" class="btn-cyber-primary">
                   <span>Join The Mission</span>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -94,7 +94,7 @@
             </div>
 
             <!-- Command Prompt Terminal Window -->
-            <div class="scroll-reveal-right">
+            <div class="hero-terminal-wrap scroll-reveal-right">
               <div class="terminal-window">
                 <div class="terminal-header">
                   <div class="terminal-dots">
@@ -115,7 +115,7 @@
                   
                   <div class="terminal-input-row">
                     <span class="terminal-prompt">guest@techathon:~$</span>
-                    <input type="text" class="terminal-cli-input" placeholder="type 'help', 'events', 'about'..." autofocus spellcheck="false" autocomplete="off">
+                    <input type="text" class="terminal-cli-input" placeholder="type 'help', 'events', 'about'..." spellcheck="false" autocomplete="off">
                   </div>
                 </div>
               </div>
@@ -126,7 +126,7 @@
       </section>
 
       <!-- Tech Domain Streamer (Marquee Keywords from V1) -->
-      <div class="marquee-container" style="margin-bottom: 4.5rem;">
+      <div class="marquee-container home-marquee-wrap">
         <div class="marquee-content marquee-reverse">
           <span class="marquee-item">&bull; AI</span>
           <span class="marquee-item">&bull; WEB DEV</span>
@@ -146,13 +146,13 @@
       </div>
 
       <!-- Highlighted Past Events Section (Original V1 Data & Images) -->
-      <section style="padding: 1rem 0 5rem;">
+      <section class="home-section">
         <div class="container">
-          <div style="text-align: center; margin-bottom: 3.5rem;" class="scroll-reveal">
+          <div class="section-header scroll-reveal">
             <div style="margin-bottom: 1.75rem;">
               <div class="section-tag">FEATURED ARCHIVE</div>
             </div>
-            <h2 class="glitch-text" data-text="Highlighted Past Events" style="font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 1.5rem;">
+            <h2 class="glitch-text" data-text="Highlighted Past Events">
               Highlighted Past Events
             </h2>
             <p style="font-family: var(--font-mono); color: var(--muted-foreground); max-width: 600px; margin: 0 auto;">
@@ -160,7 +160,7 @@
             </p>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <div class="responsive-cards-grid">
             
             <!-- Event 1: AI Driven Drone Technology -->
             <div class="event-card-item scroll-reveal delay-1">
@@ -242,13 +242,13 @@
       </section>
 
       <!-- Wisdom from the Digital Frontier (V1 Quotes) -->
-      <section style="padding: 5rem 0;">
+      <section class="home-section">
         <div class="container">
-          <div style="text-align: center; margin-bottom: 3.5rem;" class="scroll-reveal">
+          <div class="section-header scroll-reveal">
             <div style="margin-bottom: 1.75rem;">
               <div class="section-tag">PHILOSOPHY</div>
             </div>
-            <h2 class="glitch-text" data-text="Wisdom from the Digital Frontier" style="font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 1.5rem;">
+            <h2 class="glitch-text" data-text="Wisdom from the Digital Frontier">
               Wisdom from the Digital Frontier
             </h2>
             <p style="font-family: var(--font-mono); color: var(--muted-foreground); max-width: 600px; margin: 0 auto;">
@@ -256,7 +256,7 @@
             </p>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+          <div class="responsive-cards-grid">
             
             <div class="cyber-card scroll-reveal delay-1" style="display: flex; flex-direction: column; justify-content: space-between;">
               <div>
@@ -308,13 +308,13 @@
       </section>
 
       <!-- What Our Members Say (V1 Testimonials & Real Avatars) -->
-      <section style="padding: 4rem 0 6rem; background: rgba(13, 22, 42, 0.4); border-top: 1px solid var(--border);">
+      <section class="home-section-alt">
         <div class="container">
-          <div style="text-align: center; margin-bottom: 3.5rem;" class="scroll-reveal">
+          <div class="section-header scroll-reveal">
             <div style="margin-bottom: 1.75rem;">
               <div class="section-tag">COMMUNITY VOICES</div>
             </div>
-            <h2 class="glitch-text" data-text="What Our Members Say" style="font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 1.5rem;">
+            <h2 class="glitch-text" data-text="What Our Members Say">
               What Our Members Say
             </h2>
             <p style="font-family: var(--font-mono); color: var(--muted-foreground); max-width: 600px; margin: 0 auto;">
@@ -322,7 +322,7 @@
             </p>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <div class="responsive-cards-grid">
             
             <!-- Testimonial 1: Aditya kumar -->
             <div class="cyber-card scroll-reveal delay-1">
